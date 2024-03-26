@@ -58,4 +58,4 @@ plt.xticks(df2[df2.columns[0]][::30])
 # 設定圖表標題
 # 顯示圖片
 plt.show()
-plt.savefig("C:/Users/USER/Desktop/oil.png")
+plt.savefig("'/home/USER/Desktop/oil.png'")
