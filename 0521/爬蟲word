@@ -1,0 +1,16 @@
+我需要一個網路爬蟲程式，爬以下網址的資料
+url=https://tisvcloud.freeway.gov.tw/history/TDCS/M05A/
+爬取2024年1月1日的資料到2024年4月30日的資料
+2024年1月1日的檔案類型如下是一個壓縮檔
+https://tisvcloud.freeway.gov.tw/history/TDCS/M05A/M05A_20240101.tar.gz
+2024年4月16日檔案形式如下
+https://tisvcloud.freeway.gov.tw/history/TDCS/M05A/20240416/00/TDCS_M05A_20240416_000000.csv
+https://tisvcloud.freeway.gov.tw/history/TDCS/M05A/20240416/00/TDCS_M05A_20240416_000500.csv
+檔案內資料格式如下
+filename 最後面的數字代表的是小時 分鐘 與秒，例如 000000 代表 00:00:00 
+ 000500 代表 00:05:00
+如果每5分鐘一筆資料,利用迴圈產生檔名
+  例如: TDCS_M03A_20240325_000000.csv
+        TDCS_M03A_20240325_000500.csv
+也就是 2024 4 月 16 日 的 00:05:00 的資料
+請幫我自行判斷每一天的檔案狀態。import urllib.request
